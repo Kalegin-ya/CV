@@ -4,57 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <img src="" alt="">
-    <nav>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav>
-    <h1></h1>
-    <p></p>
+  <header class="header">
+    <img src="img/young.jpg" alt="my-photo">
+    <div class="header-right-side">
+      <nav>
+        <ul class="nav-list">
+          <li>About</li>
+          <li>Education</li>
+          <li>Languages</li>
+          <li>Code example</li>
+          <li>Projects</li>
+        </ul>
+      </nav>
+      <div class="name-job-header">
+        <h1>Yaroslav Kalegin</h1>
+        <p>Junior Front-end Developer</p>
+      </div>
+    </div>
   </header>
   <main>
     <div class="aside">
       <section>
-        <h2></h2>
+        <h2>Hard Skills</h2>
         <div></div>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>HTML 5</li>
+          <li>CSS3</li>
+          <li>Figma</li>
+          <li>Git, GitHub</li>
+          <li>Markdown</li>
+          <li>Jira</li>
+          <li>VS Code</li>
+          <li>Eclipse</li>
+          <li>IntelliJ IDEA</li>
         </ul>
       </section>
 
       <section>
-        <h2></h2>
+        <h2>Soft Skills</h2>
         <div></div>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>GTD</li>
+          <li>Teamwork</li>
+          <li>Agile</li>
+          <li>Scrum</li>
         </ul>
       </section>
 
       <section>
-        <h2></h2>
-        <p></p>
-        <p></p>
+        <h2>Contacts</h2>
+        <p>Phone: +38(073)737-33-13</p>
+        <p>Email: kalegin.ya@gmail.com</p>
         <p>
           <a href=""><img src="" alt=""></a>
           <a href=""><img src="" alt=""></a>
@@ -67,43 +73,65 @@
     </div>
     <div class="main">
       <section>
-        <h2></h2>
+        <h2>About me</h2>
         <div></div>
-        <p></p>
+        <p>
+          I have tried many professions in my life until I found this one. After all, what could be better than a job in
+          which you
+          can never say that you know everything. A job where there is always something to learn is great. work will
+          never get
+          boring, because you will always find something new, continuing to study..
+        </p>
       </section>
 
       <section>
-        <h2></h2>
+        <h2>Education</h2>
         <div></div>
-        <p></p>
+        <p>National Aerospace University</p>
+        <p>(Metrology, certification and standardization)</p>
+        <p>Seven-day introductory course by GoIT</p>
+        <p>(HTML/CSS)</p>
+        <p>Basic course "Java syntax" by Mate Acadmy</p>
+        <p>(Java, IntelliJ IDEA, Eclipse)</p>
       </section>
 
       <section>
-        <h2></h2>
+        <h2>Languages</h2>
         <div></div>
-        <p></p>
+        <p>
+          Ukrainian - Intermediate
+          Russian - Native
+          English - Pre-Intermediate (B1 in proccess...)
+        </p>
       </section>
 
       <section>
-        <h2></h2>
+        <h2>Code example</h2>
         <div></div>
         <pre><code>
-
+const isLowerCase = (char) =>
+char.toLowerCase() === char;
+const swapCase = (char) =>
+isLowerCase(char) ? char.toUpperCase() :
+char.toLowerCase();
+String.prototype.toAlternatingCase = function() {
+return [...this].map(swapCase).join('');
+};
         </code></pre>
       </section>
 
       <section>
-        <h2></h2>
+        <h2>Projects</h2>
         <div></div>
         <div>
           <img src="" alt="">
-          <p></p>
-          <p></p>
+          <p>Compiled resume based on video lessons of the IT school of Go IT.</p>
+          <p>[HTML5, CSS3]</p>
         </div>
         <div>
           <img src="" alt="">
-          <p></p>
-          <p></p>
+          <p>My first resume written with Markdown and GitHub.</p>
+          <p>[Markdowm, GitHub]</p>
         </div>
       </section>
     </div>
