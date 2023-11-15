@@ -97,11 +97,12 @@ h1 {
 
 main {
   display: flex;
-  background-color: whitesmoke;
+  background-color: var(--main-black);
 }
 
 .main {
-  /* border-bottom-left-radius: 25px; */
+  border-bottom-left-radius: 25px;
+  background-color: whitesmoke;
 }
 
 .aside {
