@@ -15,7 +15,6 @@ html {
 body {
   margin: 0;
   box-shadow: var(--main-yellow) 0px 0px 40px;
-  /* background-color: var(--main-black); */
 }
 
 /* Header */
@@ -57,13 +56,20 @@ nav {
   padding-left: 0px;
 }
 
-.nav-list li {
-  padding: 0 12px;
-}
-
 .nav-list li a {
   text-decoration: none;
   color: var(--main-black);
+  transition: 1s;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.nav-list li a:hover {
+  transition: 1s;
+  position: relative;
+  background-color: whitesmoke;
+  right: 3px;
 }
 
 .name-job-header {
@@ -224,6 +230,7 @@ main {
 
 .projects-container {
   display: flex;
+  justify-content: center;
 }
 
 .projects-img {
