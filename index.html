@@ -59,8 +59,8 @@
 
       <section class="contacts">
         <h2>Contacts</h2>
-        <p>Phone: +38(073)737-33-13</p>
-        <p>Email: kalegin.ya@gmail.com</p>
+        <p>Phone: <span>+38(073)737-33-13</span></p>
+        <p>Email: <span>kalegin.ya@gmail.com</span></p>
         <p>
           <a href=""><img src="" alt=""></a>
           <a href=""><img src="" alt=""></a>
@@ -72,7 +72,7 @@
 
     </div>
     <div class="main">
-      <section>
+      <section class="about">
         <h2>About me</h2>
         <div></div>
         <p>
@@ -84,7 +84,7 @@
         </p>
       </section>
 
-      <section>
+      <section class="education">
         <h2>Education</h2>
         <div></div>
         <p>National Aerospace University</p>
@@ -95,43 +95,45 @@
         <p>(Java, IntelliJ IDEA, Eclipse)</p>
       </section>
 
-      <section>
+      <section class="languages">
         <h2>Languages</h2>
         <div></div>
-        <p>
-          Ukrainian - Intermediate
-          Russian - Native
-          English - Pre-Intermediate (B1 in proccess...)
-        </p>
+        <ul>
+          <li><span>Ukrainian</span> - Intermediate</li>
+          <li><span>Russian</span> - Native</li>
+          <li><span>English</span> - Pre-Intermediate (B1 in proccess...)</li>
+        </ul>
       </section>
 
-      <section>
+      <section class="code-example">
         <h2>Code example</h2>
         <div></div>
         <pre><code>
-const isLowerCase = (char) =>
-char.toLowerCase() === char;
-const swapCase = (char) =>
-isLowerCase(char) ? char.toUpperCase() :
-char.toLowerCase();
-String.prototype.toAlternatingCase = function() {
-return [...this].map(swapCase).join('');
-};
+  const isLowerCase = (char) =>
+    char.toLowerCase() === char;
+  const swapCase = (char) =>
+  isLowerCase(char) ? char.toUpperCase() :
+    char.toLowerCase();
+  String.prototype.toAlternatingCase = function() {
+    return [...this].map(swapCase).join('');
+      };
         </code></pre>
       </section>
 
-      <section>
+      <section class="projects">
         <h2>Projects</h2>
         <div></div>
-        <div>
-          <img src="" alt="">
-          <p>Compiled resume based on video lessons of the IT school of Go IT.</p>
-          <p>[HTML5, CSS3]</p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p>My first resume written with Markdown and GitHub.</p>
-          <p>[Markdowm, GitHub]</p>
+        <div class="projects-container">
+          <div class="projects-content">
+            <img class="projects-img" src="img/my-project-2.png" alt="">
+            <p>Compiled resume based on video lessons of the IT school of Go IT.</p>
+            <p>[HTML5, CSS3]</p>
+          </div>
+          <div class="projects-content">
+            <img class="projects-img" src="img/my-project-1.png" alt="">
+            <p>My first resume written with Markdown and GitHub.</p>
+            <p>[Markdowm, GitHub]</p>
+          </div>
         </div>
       </section>
     </div>

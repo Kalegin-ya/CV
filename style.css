@@ -115,3 +115,99 @@ main {
   color: white;
   opacity: 85%;
 }
+
+.contacts p {
+  font-size: 20px;
+}
+.contacts span {
+  opacity: 50%;
+}
+
+.about h2,
+.education h2,
+.languages h2,
+.code-example h2,
+.projects h2 {
+  font-size: 30px;
+  text-align: end;
+  text-transform: uppercase;
+}
+
+.about {
+  margin: 40px;
+}
+
+.about p {
+  font-size: 26px;
+}
+
+.education {
+  margin: 40px;
+}
+
+.education p {
+  font-size: 26px;
+  text-align: center;
+  line-height: 25%;
+  font-weight: 700;
+}
+
+.education p:nth-of-type(even) {
+  font-size: 18px;
+  opacity: 75%;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
+
+.languages {
+  margin: 40px;
+}
+
+.languages ul {
+  font-size: 24px;
+  line-height: 175%;
+}
+.languages span {
+  font-weight: 700;
+}
+
+.code-example {
+  margin: 40px;
+}
+
+.code-example pre {
+  background-color: #202026;
+  opacity: 95%;
+  color: var(--main-yellow);
+  border-radius: 30px;
+  padding: 25px;
+  font-size: 22px;
+}
+
+.projects {
+  margin: 40px;
+}
+
+.projects-container {
+  display: flex;
+}
+
+.projects-img {
+  max-height: 125px;
+}
+
+.projects-content {
+  font-size: 22px;
+  text-align: center;
+  background-color: var(--main-yellow);
+  margin: 40px;
+}
+
+.projects-content p:last-child {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.projects-content p {
+  margin: 25px;
+}
