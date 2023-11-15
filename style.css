@@ -60,6 +60,11 @@ nav {
   padding: 0 12px;
 }
 
+.nav-list li a {
+  text-decoration: none;
+  color: var(--main-black);
+}
+
 .name-job-header {
   background-color: var(--main-yellow);
   max-height: 130px;
@@ -100,6 +105,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100%;
 }
 
 .hard-skills h2,
@@ -115,20 +121,39 @@ main {
   line-height: 125%;
 }
 
-.contacts {
-  margin-top: 400px;
-}
-
 .contacts h2 {
   color: white;
   opacity: 85%;
 }
 
+.contacts-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+
 .contacts p {
   font-size: 20px;
 }
+
 .contacts span {
   opacity: 50%;
+}
+
+.contacts-icon {
+  display: flex;
+}
+
+.contacts-icon a {
+  width: 35px;
+  margin-right: 27px;
+  transition: 1s;
+}
+
+.contacts-icon a:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 .about h2,
@@ -201,7 +226,16 @@ main {
 }
 
 .projects-img {
-  max-height: 125px;
+  max-width: 250px;
+  height: auto;
+  box-shadow: var(--main-yellow) 0px 0px 25px;
+  transition: 1s;
+}
+
+.projects-img:hover {
+  box-shadow: var(--main-black) 0px 0px 25px;
+  transition: 1s;
+  transform: scale(115%);
 }
 
 .projects-content {
@@ -211,6 +245,8 @@ main {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin: 40px;
+  max-width: 250px;
+  width: 100%;
 }
 
 .projects-content p:last-child {
@@ -240,6 +276,24 @@ footer {
 
 .footer-left img {
   max-width: 230px;
+}
+
+.footer-left img:hover {
+  animation: shake 0.2s ease infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-0.5px);
+  }
+
+  50% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translate(-0.5px);
+  }
 }
 
 .footer-right {
@@ -273,11 +327,34 @@ footer {
 
 .footer-git img {
   height: 80px;
+  margin-left: 10px;
 }
 
 .footer-git > img {
   height: 40px;
   opacity: 75%;
+  animation: pulse 3s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+.footer-git a {
+  transition: 0.5s;
+}
+
+.footer-git a:hover {
+  transform: scale(110%);
+  transition: 0.5s;
 }
 
 .footer-creater {
