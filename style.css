@@ -283,7 +283,8 @@ footer {
 }
 
 .footer-left img {
-  max-width: 230px;
+  height: 70%;
+  margin-top: 15px;
 }
 
 .footer-left img:hover {
