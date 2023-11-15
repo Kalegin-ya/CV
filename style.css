@@ -161,6 +161,7 @@ main {
   justify-content: flex-end;
   align-items: flex-end;
   height: 100%;
+  margin-right: 20px;
 }
 
 .contacts p {
