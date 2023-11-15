@@ -8,10 +8,13 @@ html {
   max-width: 1100px;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  background-color: var(--main-black);
 }
 
 body {
   margin: 0;
+  box-shadow: var(--main-yellow) 0px 0px 40px;
+  /* background-color: var(--main-black); */
 }
 
 /* Header */
@@ -82,6 +85,11 @@ h1 {
 
 main {
   display: flex;
+  background-color: whitesmoke;
+}
+
+.main {
+  /* border-bottom-left-radius: 25px; */
 }
 
 .aside {
@@ -200,6 +208,8 @@ main {
   font-size: 22px;
   text-align: center;
   background-color: var(--main-yellow);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   margin: 40px;
 }
 
@@ -210,4 +220,69 @@ main {
 
 .projects-content p {
   margin: 25px;
+}
+
+footer {
+  height: 120px;
+  display: flex;
+
+  background-color: var(--main-black);
+  color: var(--main-yellow);
+}
+
+.footer-left {
+  background-color: var(--main-yellow);
+  border-top-right-radius: 25px;
+  min-width: 362px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-left img {
+  max-width: 230px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 15px;
+}
+
+.footer-promo-rs {
+  transform: rotate(90deg);
+  line-height: 90%;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 65px;
+  padding-left: 15px;
+}
+
+.footer-promo-rs p {
+  margin: 0;
+}
+.footer-promo-rs p:first-child {
+  font-weight: 700;
+}
+
+.footer-git {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-git img {
+  height: 80px;
+}
+
+.footer-git > img {
+  height: 40px;
+  opacity: 75%;
+}
+
+.footer-creater {
+  font-size: 22px;
+  display: flex;
+  align-items: end;
+  margin: 10px;
 }
