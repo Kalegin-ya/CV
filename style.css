@@ -418,3 +418,62 @@ footer {
     transform: scale(100%);
   }
 }
+
+/* 768-1100px */
+@media screen and (max-width: 1100px) {
+  html {
+    width: fit-content;
+  }
+
+  .header img {
+    max-width: 280px;
+  }
+
+  .aside {
+    min-width: 280px;
+  }
+
+  .hard-skills,
+  .soft-skills {
+    width: 250px;
+  }
+
+  .contacts-wrapper {
+    margin-right: 0px;
+  }
+
+  .contacts {
+  }
+
+  .contacts h2 {
+    text-align: center;
+  }
+
+  .contacts p {
+    font-size: 22px;
+    width: 270px;
+    text-align: center;
+  }
+
+  .phone-768 {
+    white-space: nowrap;
+  }
+
+  .contacts-icon a {
+    margin-right: 20px;
+  }
+
+  .footer-left {
+    min-width: 280px;
+  }
+
+  .up-buuton {
+    display: none;
+  }
+}
+
+/* 320-768px */
+@media screen and (max-width: 768px) {
+  html {
+  }
+}
