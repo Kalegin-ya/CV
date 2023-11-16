@@ -1,2 +1,2 @@
-Фиксированная верстка - https://kalegin-ya.github.io/CV/
+gh-pages- https://kalegin-ya.github.io/CV/
 
