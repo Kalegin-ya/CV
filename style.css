@@ -482,13 +482,16 @@ footer {
   /* Header mobile */
 
   .header {
-    display: flex;
-    flex-direction: column-reverse;
+    /* display: flex;
+    flex-direction: column-reverse; */
+    display: block;
+
+    text-align: center;
   }
 
   .header img {
-    max-width: 768px;
     min-width: 320px;
+    height: auto;
     margin: 25px;
     border-radius: 100%;
     box-shadow: var(--main-yellow) 0 0 30px;
@@ -599,6 +602,8 @@ footer {
   .projects-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /* footer mobile */
