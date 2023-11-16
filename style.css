@@ -442,7 +442,8 @@ footer {
     margin-right: 0px;
   }
 
-  .contacts {
+  .education p {
+    line-height: 125%;
   }
 
   .contacts h2 {
