@@ -483,10 +483,7 @@ footer {
   /* Header mobile */
 
   .header {
-    /* display: flex;
-    flex-direction: column-reverse; */
     display: block;
-
     text-align: center;
   }
 
