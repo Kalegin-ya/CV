@@ -512,6 +512,95 @@ footer {
 
   /* main mobile */
 
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    border-bottom-left-radius: 0px;
+    background-color: whitesmoke;
+  }
+
+  .aside {
+    min-width: 320px;
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .hard-skills,
+  .soft-skills {
+    min-width: 325px;
+  }
+
+  .contacts-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .contacts-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts-icon a {
+    width: 45px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .about {
+    margin: 15px;
+  }
+
+  .about p {
+    font-size: 26px;
+  }
+
+  .education {
+    margin: 70px 15px 15px 15px;
+  }
+
+  .education p {
+    line-height: 125%;
+  }
+
+  .education p:nth-of-type(even) {
+    font-size: 18px;
+  }
+
+  .languages {
+    margin: 60px 15px 15px 15px;
+  }
+
+  .languages ul {
+    font-size: 22px;
+  }
+
+  .code-example {
+    margin: 60px 15px 15px 15px;
+  }
+
+  .code-example pre {
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  .projects {
+    margin: 60px 15px 15px 15px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* footer mobile */
   footer {
     height: auto;
